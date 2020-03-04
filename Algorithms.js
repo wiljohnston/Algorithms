@@ -85,9 +85,9 @@ class Algorithms {
     }
 
     for (var i = 0; i < node.children.length; i++) {
-      next = node.children[i];
+      let next = node.children[i];
 
-      let returnValue = depthFirstSearchResursive(next, callback);
+      let returnValue = this.depthFirstSearchResursive(next, callback);
 
       if (returnValue !== undefined) {
         return returnValue;
@@ -98,5 +98,55 @@ class Algorithms {
   }
 }
 
+let node = 
+{
+  id: 1,
+  children: [
+    {
+      id: 2,
+      children: [
+        
+      ]
+    },
+    {
+      id: 3,
+      children: [
+        {
+          id: 4,
+          children: [
+            {
+              id: 6,
+              children: [
+              
+              ]
+            },
+            {
+              id: 7,
+              children: [
+                
+              ]
+            },
+            {
+              id: 8,
+              children: [
+                
+              ]
+            }
+          ]
+        },{
+          id: 5,
+          children: [
+            
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+let a = new Algorithms();
+
+a.breadthFirstSearch(node, n => console.log(n.id));
 
 module.exports = Algorithms;
