@@ -26,7 +26,7 @@ const al = require("algorithms");
 - `childrenPropertyName` <?String> (`default="children"`) The property name of the node object that points to an array of its children nodes.
 
 - returns: <any> Returns whatever the callback returns, or nothing.
-  
+
 This method perform a breadth first search, using an array as a queue. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
 
 
@@ -37,7 +37,7 @@ This method perform a breadth first search, using an array as a queue. It can pe
 - `childrenPropertyName` <?String> (`default="children"`) The property name of the node object that points to an array of its children nodes.
 
 - returns: <any> Returns whatever the callback returns, or nothing.
-  
+
 This method perform a depth first search, using an array as a stack. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
 
 
@@ -72,3 +72,6 @@ al.depthFirstSearchRecursive(node, n =>
   n.children.length === 4 ? n : undefined
 );
 ```
+
+###NOTE
+I'm not sure why the markdown is indented after every paragraph. It doesn't do that on other markdown editors.
