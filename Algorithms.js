@@ -6,7 +6,7 @@ class Algorithms {
   }
 
   /**
-   * Re-initialises data structure properties for a new algorithm execution.   * 
+   * Re-initialises data structure properties for a new algorithm execution. 
    * @return {null} No return value. 
    */
   reset() {
@@ -24,7 +24,7 @@ class Algorithms {
    * @return {any} Returns whatever the callback returns, or nothing.
    */
   breadthFirstSearch(node, callback, childrenPropertyName = "children") {
-    
+    // Reset our 'queue'
     this.reset();
 
     this.queue.push(node);
@@ -59,7 +59,7 @@ class Algorithms {
    * @return {any} Returns whatever the callback returns, or nothing.
    */
   depthFirstSearch(node, callback, childrenPropertyName = "children") {
-    
+    // Reset our 'stack'
     this.reset();
 
     this.stack.push(node);
@@ -97,7 +97,7 @@ class Algorithms {
    * @return {any} Returns whatever the callback returns, or nothing.
    */
   depthFirstSearchResursive(node, callback, childrenPropertyName = "children") {
-    
+    // Reset our 'seen' object
     this.reset();
     
     // If we haven't seen this node yet
