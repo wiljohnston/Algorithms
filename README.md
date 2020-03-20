@@ -12,11 +12,13 @@ These instructions will get you using the class
 npm install https://github.com/wiljohnston/algorithms
 ```
 
+
 ### Running
 
 ```js
 const al = require("algorithms");
 ```
+
 
 ### algorithms.breadthFirstSearch(node, callback, childrenPropertyName = "children")
 
@@ -28,6 +30,7 @@ const al = require("algorithms");
 
 This method perform a breadth first search, using an array as a queue. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
 
+
 ### algorithms.depthFirstSearch(node, callback, childrenPropertyName = "children")
 
 - `node` <Object> The root node.
@@ -37,6 +40,7 @@ This method perform a breadth first search, using an array as a queue. It can pe
 - returns: <any> Returns whatever the callback returns, or nothing.
 
 This method perform a depth first search, using an array as a stack. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
+
 
 ### algorithms.depthFirstSearchRecursive(node, callback, childrenPropertyName = "children")
 
