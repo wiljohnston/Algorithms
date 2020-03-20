@@ -26,7 +26,7 @@ const al = require("algorithms");
 - `childrenPropertyName` <?String> (`default="children"`) The property name of the node object that points to an array of its children nodes.
 
 - returns: <any> Returns whatever the callback returns, or nothing.
-
+  
 This method perform a breadth first search, using an array as a queue. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
 
 
@@ -37,7 +37,7 @@ This method perform a breadth first search, using an array as a queue. It can pe
 - `childrenPropertyName` <?String> (`default="children"`) The property name of the node object that points to an array of its children nodes.
 
 - returns: <any> Returns whatever the callback returns, or nothing.
-
+  
 This method perform a depth first search, using an array as a stack. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
 
 
@@ -48,14 +48,14 @@ This method perform a depth first search, using an array as a stack. It can perf
 - `childrenPropertyName` <?String> (`default="children"`) The property name of the node object that points to an array of its children nodes.
 
 - returns: <any> Returns whatever the callback returns, or nothing.
-
+  
 This method perform a depth first search, using recursive calls. It can perform some passive action on each node, like a `console.log`, or it could check some property of the node and return the node itself, or an index, etc.
 
 ### callback(node)
 
 - `node` <Object> The root currently being processes.
 - returns: <any> Can be a passive call, like `console.log`, or can return some value to be returned by the top-level function.
-
+  
 Each node that is processed is passed into the callback, and the first defined value returned will be returned by the calling function.
 
 ### Examples
