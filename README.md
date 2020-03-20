@@ -11,14 +11,14 @@ These instructions will get you using the class
 ```
 npm install https://github.com/wiljohnston/Algorithms
 ```
+
 ### Running
 
 ```
-const Algorithms = require('Algorithms');
-
-let al = new Algorithms();
+const al = require('algorithms');
 
 ```
+
 ### Examples
 
 ```

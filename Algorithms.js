@@ -64,11 +64,12 @@ class Algorithms {
       let unseenChildren = current.children.filter(
         child => !Object.keys(this.seen).includes(child)
       );
-      this.stack = [...this.stack, ...unseenChildren];
+      this.stack = [...this.stack, ...unseenChildren.reverse()];
     }
   }
 
   // callback(node) will be called with each node, first defined value returned will be passed up the stack immediately
+  // pre-order search if you're searching a binary tree
   depthFirstSearchResursive(node, callback) {
     
     this.reset();
@@ -98,4 +99,4 @@ class Algorithms {
   }
 }
 
-module.exports = Algorithms;
+module.exports = new Algorithms();
