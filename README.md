@@ -12,7 +12,6 @@ These instructions will get you using the class
 npm install https://github.com/wiljohnston/algorithms
 ```
 
-
 ### Running
 
 ```js
