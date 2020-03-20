@@ -2,6 +2,9 @@
 
 This is simply a class of functions that I've written over time to practice my algorithms and to use when needed.
 
+### Note on README formatting
+I'm not sure why the markdown is indented after every paragraph. It doesn't do that on other markdown editors.
+
 ## Getting Started
 
 These instructions will get you using the class
@@ -72,6 +75,3 @@ al.depthFirstSearchRecursive(node, n =>
   n.children.length === 4 ? n : undefined
 );
 ```
-
-###NOTE
-I'm not sure why the markdown is indented after every paragraph. It doesn't do that on other markdown editors.
