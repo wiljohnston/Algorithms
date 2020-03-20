@@ -16,7 +16,6 @@ npm install https://github.com/wiljohnston/Algorithms
 
 ```
 const al = require('algorithms');
-
 ```
 
 ### Examples
